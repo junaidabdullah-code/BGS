@@ -26,6 +26,6 @@ app.get('/fac3', (req, res) => {
 app.get('/server', (req, res) => {
     res.sendFile(path.join(__dirname,  'server.js'))
 })
-app.listen(port, () => {
+app.listen(port, "0.0.0.0", () => {
     console.log(`Example app listening on port ${port}`);
 })
